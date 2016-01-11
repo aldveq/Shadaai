@@ -1,3 +1,7 @@
+*.mysql
+*.mysql2
+*.log
+*.txt
 *.rbc
 capybara-*.html
 .rspec
@@ -33,3 +37,12 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.nib
