@@ -1,0 +1,44 @@
+<div class="container" style="margin-top:12%; margin-left:14%;">
+	<h1>Nuevo paciente:</h1>
+	<div class="row">
+		<div class="col-xs-5 col-sm-5 col-md-5">
+			<%= form_for(@nuevoP) do |f| %>
+			<% @nuevoP.errors.full_messages.each do |message|%>
+				<div class="alert alert-danger" role="alert" style="display:inline-block;">
+					<%= message%>
+				</div>
+			<%end%>
+				<div class="field">
+					<%= f.text_field :primerN, placeholder: "Primer Nombre", class:"form-control" %>
+				</div>
+				<div class="field">
+					<%= f.text_field :segundoN, placeholder: "Segundo Nombre", class:"form-control" %>
+				</div>
+				<div class="field">
+					<%= f.text_field :primerA, placeholder: "Primer Apellido", class:"form-control" %>
+				</div>
+				<div class="field">
+					<%= f.text_field :segundoA, placeholder: "Segundo Apellido", class:"form-control" %>
+				</div>
+				<div class="field">
+					<%= f.text_field :edad, placeholder: "Edad", class:"form-control" %>
+				</div>
+				<div class="field">
+					<%= f.text_field :direccion, placeholder: "Dirección", class:"form-control" %>
+				</div>	
+				<div class="field">
+					<%= f.text_field :telefono, placeholder: "Teléfono", class:"form-control" %>
+				</div>
+				<div class="field">
+					<%= f.submit "Guardar paciente", class:"btn btn-primary", style:"font-weight:bold"%>
+				</div>					
+			<%end%>
+		</div>
+		<div class="col-xs-1 col-sm-1 col-md-1" style="margin-top:7%;">
+			<%= image_tag "footer.png", class: 'img-responsive'%>
+		</div>
+		<div class="col-xs-5 col-sm-5 col-md-5">
+			<%= image_tag "enfermera.gif", class: 'img-responsive img-circle'%>		
+		</div>
+	</div>
+</div>

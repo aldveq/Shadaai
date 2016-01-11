@@ -1,0 +1,14 @@
+<h1 style="margin-top:10%">Pacientes en la base de datos</h1>
+<% @pacientes.each do |mostrarP| %>
+	<div>
+		<%= mostrarP.primerN %> 
+		<%= mostrarP.segundoN %>
+		<%= mostrarP.primerA %>
+		<%= mostrarP.segundoA %>
+		<%= mostrarP.edad %>
+		<%= mostrarP.direccion %>
+		<%= mostrarP.telefono %>
+	</div>
+
+	<%= link_to "Eliminar", Paciente, method: :destroy %>
+<%end%>
