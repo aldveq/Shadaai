@@ -1,17 +1,47 @@
+# development:
+#   adapter: postgresql
+#   database: <%= Rails.application.secrets[:database] %>
+#   encoding: unicode
+#   username: postgres
+#   password: 12345
+#   pool: 5
+
 development:
   adapter: postgresql
-  database: <%= Rails.application.secrets[:database] %>
   encoding: unicode
+  database: shadaai-dev
   pool: 5
+  username: postgres
+  password: 12345
 
+# test:
+  # adapter: postgresql
+  # database: <%= Rails.application.secrets[:database] %>
+  # encoding: unicode
+  # username: postgres
+  # password: 12345
+  # pool: 5
 test:
   adapter: postgresql
-  database: <%= Rails.application.secrets[:database] %>
   encoding: unicode
+  database: shadaai-test
   pool: 5
+  username: postgres
+  password: 12345
 
 production:
   adapter: postgresql
-  database: <%= Rails.application.secrets[:database] %>
   encoding: unicode
+  database: shadaai
   pool: 5
+  username: postgres
+  password: 12345
+
+
+# production:
+#   adapter: postgresql
+#   database: <%= Rails.application.secrets[:database] %>
+#   encoding: unicode
+#   username: postgres
+#   password: 12345
+#   pool: 5
