@@ -1,0 +1,18 @@
+/*.pie{
+	position: absolute;
+	bottom: 0;
+	left: 0;	
+	background-color: #3498DB;
+}*/
+
+div > article.articulo{
+	margin-top: 20%;
+}
+
+div > p.derechos{
+	margin-top: 1%;
+}
+
+.field{
+	margin-top: 1em;
+}
