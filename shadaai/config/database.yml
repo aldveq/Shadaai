@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+  adapter: mysql2
   pool: 5
   timeout: 5000
 
@@ -17,7 +17,7 @@ development:
   password: <%= Rails.application.secrets[:password] %>
   host: localhost
   port: 3307
-  database: <%= Rails.application.secrets[:database] %> 
+  database: <%= Rails.application.secrets[:database] %>
   pool: 5
   timeout: 5000
 
