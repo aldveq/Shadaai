@@ -1,26 +1,17 @@
 development:
-  adapter: mysql2
+  adapter: postgresql
   database: <%= Rails.application.secrets[:development][:database] %>
-  username: <%= Rails.application.secrets[:development][:username] %>
-  password: <%= Rails.application.secrets[:development][:password] %>
-  host: localhost
+  encoding: unicode
   pool: 5
-  timeout: 5000
 
 test:
-  adapter: mysql2
+  adapter: postgresql
   database: <%= Rails.application.secrets[:test][:database] %>
-  username: <%= Rails.application.secrets[:test][:username] %>
-  password: <%= Rails.application.secrets[:test][:password] %>
-  host: localhost
+  encoding: unicode
   pool: 5
-  timeout: 5000
 
 production:
-  adapter: mysql2
+  adapter: postgresql
   database: <%= Rails.application.secrets[:production][:database] %>
-  username: <%= Rails.application.secrets[:production][:username] %>
-  password: <%= Rails.application.secrets[:production][:password] %>
-  host: localhost
+  encoding: unicode
   pool: 5
-  timeout: 5000
